@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: devops-ai-backend
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./backend/logs:/app/logs
+    env_file:
+      - ./backend/.env
+    restart: always
+    networks:
+      - devops-network
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      args:
+        - VITE_API_BASE_URL=http://localhost:5000/api/v1
+    container_name: devops-ai-frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    restart: always
+    networks:
+      - devops-network
+
+networks:
+  devops-network:
+    driver: bridge

@@ -1,0 +1,11 @@
+# ── Core ──────────────────────────────────────────────────────────────────────
+flask>=3.0.0
+flask-cors>=4.0.0
+python-dotenv>=1.0.0
+
+# ── AI Providers (install the one you use) ────────────────────────────────────
+openai>=1.30.0
+anthropic>=0.25.0
+
+# ── AWS SDK (optional — only needed when ENABLE_AWS=true) ─────────────────────
+boto3>=1.34.0

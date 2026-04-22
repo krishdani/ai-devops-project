@@ -1,0 +1,6 @@
+{"timestamp": "2026-04-22T09:55:26.787956+00:00", "level": "INFO", "logger": "app", "message": "============================================================", "module": "app", "function": "<module>", "line": 49}
+{"timestamp": "2026-04-22T09:55:26.788321+00:00", "level": "INFO", "logger": "app", "message": "AI DevOps Monitoring Platform Starting...", "module": "app", "function": "<module>", "line": 50}
+{"timestamp": "2026-04-22T09:55:26.788509+00:00", "level": "INFO", "logger": "app", "message": "============================================================", "module": "app", "function": "<module>", "line": 51}
+{"timestamp": "2026-04-22T09:55:26.791841+00:00", "level": "INFO", "logger": "app", "message": "Log generator service started.", "module": "app", "function": "start_background_services", "line": 38}
+{"timestamp": "2026-04-22T09:55:32.783950+00:00", "level": "INFO", "logger": "app", "message": "Log watcher service started.", "module": "app", "function": "start_background_services", "line": 45}
+{"timestamp": "2026-04-22T09:55:33.786907+00:00", "level": "INFO", "logger": "app", "message": "Server starting on port 5000", "module": "app", "function": "<module>", "line": 59}

@@ -1,0 +1,1 @@
+{"timestamp": "2026-04-22T09:55:32.783673+00:00", "level": "INFO", "logger": "log_watcher", "message": "LogWatcher starting \u2014 poll interval=3.0s, AI batch size=50", "module": "log_watcher", "function": "run", "line": 334}
