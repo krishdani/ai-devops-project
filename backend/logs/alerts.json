@@ -1,0 +1,659 @@
+[
+  {
+    "id": "76f5918a9052",
+    "alert_type": "XSS_ATTEMPT",
+    "message": "XSS attempt detected: XSS attempt detected on /api/v1/profile from IP 192.168.1.16: payload='javascript:void(0)'",
+    "severity": "ERROR",
+    "source": "threat_detector",
+    "metadata": {
+      "raw_message": "XSS attempt detected on /api/v1/profile from IP 192.168.1.16: payload='javascript:void(0)'"
+    },
+    "timestamp": "2026-04-28T19:05:22.227734+00:00",
+    "acknowledged": false
+  },
+  {
+    "id": "f17935b87e88",
+    "alert_type": "ERROR_RATE_SPIKE",
+    "message": "Error rate spike: 5 errors in the last 5 minutes",
+    "severity": "ERROR",
+    "source": "threat_detector",
+    "metadata": {
+      "error_count": 5,
+      "window_minutes": 5
+    },
+    "timestamp": "2026-04-28T19:06:37.718144+00:00",
+    "acknowledged": false
+  },
+  {
+    "id": "c5f6314238e2",
+    "alert_type": "SQL_INJECTION",
+    "message": "SQL injection attempt detected: SQL injection attempt blocked on /api/v1/search from IP 192.168.1.10: payload='' UNION SELECT * FROM credentials--'",
+    "severity": "CRITICAL",
+    "source": "threat_detector",
+    "metadata": {
+      "raw_message": "SQL injection attempt blocked on /api/v1/search from IP 192.168.1.10: payload='' UNION SELECT * FROM credentials--'"
+    },
+    "timestamp": "2026-04-28T19:06:46.794170+00:00",
+    "acknowledged": false
+  },
+  {
+    "id": "00d8d064d260",
+    "alert_type": "ERROR_RATE_SPIKE",
+    "message": "Error rate spike: 6 errors in the last 5 minutes",
+    "severity": "ERROR",
+    "source": "threat_detector",
+    "metadata": {
+      "error_count": 6,
+      "window_minutes": 5
+    },
+    "timestamp": "2026-04-28T19:06:46.803820+00:00",
+    "acknowledged": false
+  },
+  {
+    "id": "4deccc9b5f06",
+    "alert_type": "ERROR_RATE_SPIKE",
+    "message": "Error rate spike: 7 errors in the last 5 minutes",
+    "severity": "ERROR",
+    "source": "threat_detector",
+    "metadata": {
+      "error_count": 7,
+      "window_minutes": 5
+    },
+    "timestamp": "2026-04-28T19:06:52.855051+00:00",
+    "acknowledged": false
+  },
+  {
+    "id": "1e05926e8a16",
+    "alert_type": "ERROR_RATE_SPIKE",
+    "message": "Error rate spike: 8 errors in the last 5 minutes",
+    "severity": "ERROR",
+    "source": "threat_detector",
+    "metadata": {
+      "error_count": 8,
+      "window_minutes": 5
+    },
+    "timestamp": "2026-04-28T19:07:29.146759+00:00",
+    "acknowledged": false
+  },
+  {
+    "id": "9fa82ef83b95",
+    "alert_type": "AI_RISK_ASSESSMENT",
+    "message": "AI detected CRITICAL risk: Analyzed 50 log entries: 8 errors, 9 warnings, 2 security threats.",
+    "severity": "CRITICAL",
+    "source": "ai_analyzer",
+    "metadata": {
+      "risk_level": "CRITICAL",
+      "anomaly_count": 1,
+      "threat_count": 2
+    },
+    "timestamp": "2026-04-28T19:07:47.506547+00:00",
+    "acknowledged": false
+  },
+  {
+    "id": "012583683e2b",
+    "alert_type": "AI_THREAT_SQL_INJECTION",
+    "message": "Detected sql injection pattern in logs",
+    "severity": "CRITICAL",
+    "source": "ai_analyzer",
+    "metadata": {
+      "threat_type": "sql_injection",
+      "severity": "CRITICAL",
+      "source_ip": "see logs",
+      "description": "Detected sql injection pattern in logs",
+      "recommendation": "Investigate and block offending IPs; review sql_injection defenses"
+    },
+    "timestamp": "2026-04-28T19:07:47.508047+00:00",
+    "acknowledged": false
+  },
+  {
+    "id": "b3d9bb8a94a6",
+    "alert_type": "AI_THREAT_XSS",
+    "message": "Detected xss pattern in logs",
+    "severity": "CRITICAL",
+    "source": "ai_analyzer",
+    "metadata": {
+      "threat_type": "xss",
+      "severity": "CRITICAL",
+      "source_ip": "see logs",
+      "description": "Detected xss pattern in logs",
+      "recommendation": "Investigate and block offending IPs; review xss defenses"
+    },
+    "timestamp": "2026-04-28T19:07:47.509491+00:00",
+    "acknowledged": false
+  },
+  {
+    "id": "fcee74832487",
+    "alert_type": "AI_ANOMALY_ERROR_SPIKE",
+    "message": "8/50 log entries are errors",
+    "severity": "ERROR",
+    "source": "ai_analyzer",
+    "metadata": {
+      "type": "error_spike",
+      "severity": "ERROR",
+      "description": "8/50 log entries are errors",
+      "affected_component": "application",
+      "recommendation": "Review error logs and identify root cause"
+    },
+    "timestamp": "2026-04-28T19:07:47.511323+00:00",
+    "acknowledged": false
+  },
+  {
+    "id": "13edf852c2ee",
+    "alert_type": "ERROR_RATE_SPIKE",
+    "message": "Error rate spike: 9 errors in the last 5 minutes",
+    "severity": "ERROR",
+    "source": "threat_detector",
+    "metadata": {
+      "error_count": 9,
+      "window_minutes": 5
+    },
+    "timestamp": "2026-04-28T19:07:56.577201+00:00",
+    "acknowledged": false
+  },
+  {
+    "id": "6bb801ab6c30",
+    "alert_type": "ERROR_RATE_SPIKE",
+    "message": "Error rate spike: 10 errors in the last 5 minutes",
+    "severity": "ERROR",
+    "source": "threat_detector",
+    "metadata": {
+      "error_count": 10,
+      "window_minutes": 5
+    },
+    "timestamp": "2026-04-28T19:08:17.687526+00:00",
+    "acknowledged": false
+  },
+  {
+    "id": "918d026518c5",
+    "alert_type": "ERROR_RATE_SPIKE",
+    "message": "Error rate spike: 11 errors in the last 5 minutes",
+    "severity": "ERROR",
+    "source": "threat_detector",
+    "metadata": {
+      "error_count": 11,
+      "window_minutes": 5
+    },
+    "timestamp": "2026-04-28T19:08:26.763171+00:00",
+    "acknowledged": false
+  },
+  {
+    "id": "b6a73888f33f",
+    "alert_type": "PRIVILEGE_ESCALATION",
+    "message": "Privilege escalation attempt: Privilege escalation attempt: user 'bob' tried to access admin endpoint",
+    "severity": "CRITICAL",
+    "source": "threat_detector",
+    "metadata": {
+      "raw_message": "Privilege escalation attempt: user 'bob' tried to access admin endpoint"
+    },
+    "timestamp": "2026-04-28T19:08:38.827073+00:00",
+    "acknowledged": false
+  },
+  {
+    "id": "0977eb7f998f",
+    "alert_type": "ERROR_RATE_SPIKE",
+    "message": "Error rate spike: 12 errors in the last 5 minutes",
+    "severity": "ERROR",
+    "source": "threat_detector",
+    "metadata": {
+      "error_count": 12,
+      "window_minutes": 5
+    },
+    "timestamp": "2026-04-28T19:08:38.832357+00:00",
+    "acknowledged": false
+  },
+  {
+    "id": "4eca18836248",
+    "alert_type": "ERROR_RATE_SPIKE",
+    "message": "Error rate spike: 13 errors in the last 5 minutes",
+    "severity": "ERROR",
+    "source": "threat_detector",
+    "metadata": {
+      "error_count": 13,
+      "window_minutes": 5
+    },
+    "timestamp": "2026-04-28T19:08:56.939400+00:00",
+    "acknowledged": false
+  },
+  {
+    "id": "d95b3d8c00d1",
+    "alert_type": "ERROR_RATE_SPIKE",
+    "message": "Error rate spike: 14 errors in the last 5 minutes",
+    "severity": "ERROR",
+    "source": "threat_detector",
+    "metadata": {
+      "error_count": 14,
+      "window_minutes": 5
+    },
+    "timestamp": "2026-04-28T19:11:03.907845+00:00",
+    "acknowledged": false
+  },
+  {
+    "id": "a75371aeae49",
+    "alert_type": "PORT_SCAN",
+    "message": "Port scan detected: Potential port scan from IP 10.0.1.211: 121 ports probed in 15s",
+    "severity": "CRITICAL",
+    "source": "threat_detector",
+    "metadata": {
+      "raw_message": "Potential port scan from IP 10.0.1.211: 121 ports probed in 15s"
+    },
+    "timestamp": "2026-04-28T19:11:34.116534+00:00",
+    "acknowledged": false
+  },
+  {
+    "id": "e61b70a33264",
+    "alert_type": "ERROR_RATE_SPIKE",
+    "message": "Error rate spike: 15 errors in the last 5 minutes",
+    "severity": "ERROR",
+    "source": "threat_detector",
+    "metadata": {
+      "error_count": 15,
+      "window_minutes": 5
+    },
+    "timestamp": "2026-04-28T19:11:34.120483+00:00",
+    "acknowledged": false
+  },
+  {
+    "id": "2053e5d9667e",
+    "alert_type": "AI_RISK_ASSESSMENT",
+    "message": "AI detected CRITICAL risk: Analyzed 50 log entries: 11 errors, 15 warnings, 2 security threats.",
+    "severity": "CRITICAL",
+    "source": "ai_analyzer",
+    "metadata": {
+      "risk_level": "CRITICAL",
+      "anomaly_count": 1,
+      "threat_count": 2
+    },
+    "timestamp": "2026-04-28T19:11:41.518870+00:00",
+    "acknowledged": false
+  },
+  {
+    "id": "4c3cc7683ad6",
+    "alert_type": "AI_THREAT_PORT_SCAN",
+    "message": "Detected port scan pattern in logs",
+    "severity": "CRITICAL",
+    "source": "ai_analyzer",
+    "metadata": {
+      "threat_type": "port_scan",
+      "severity": "CRITICAL",
+      "source_ip": "see logs",
+      "description": "Detected port scan pattern in logs",
+      "recommendation": "Investigate and block offending IPs; review port_scan defenses"
+    },
+    "timestamp": "2026-04-28T19:11:41.521642+00:00",
+    "acknowledged": false
+  },
+  {
+    "id": "7a932191b964",
+    "alert_type": "AI_THREAT_PRIVILEGE_ESCALATION",
+    "message": "Detected privilege escalation pattern in logs",
+    "severity": "CRITICAL",
+    "source": "ai_analyzer",
+    "metadata": {
+      "threat_type": "privilege_escalation",
+      "severity": "CRITICAL",
+      "source_ip": "see logs",
+      "description": "Detected privilege escalation pattern in logs",
+      "recommendation": "Investigate and block offending IPs; review privilege_escalation defenses"
+    },
+    "timestamp": "2026-04-28T19:11:41.531991+00:00",
+    "acknowledged": false
+  },
+  {
+    "id": "370a699851f0",
+    "alert_type": "AI_ANOMALY_ERROR_SPIKE",
+    "message": "11/50 log entries are errors",
+    "severity": "ERROR",
+    "source": "ai_analyzer",
+    "metadata": {
+      "type": "error_spike",
+      "severity": "ERROR",
+      "description": "11/50 log entries are errors",
+      "affected_component": "application",
+      "recommendation": "Review error logs and identify root cause"
+    },
+    "timestamp": "2026-04-28T19:11:41.534413+00:00",
+    "acknowledged": false
+  },
+  {
+    "id": "6bb801ab6c30",
+    "alert_type": "ERROR_RATE_SPIKE",
+    "message": "Error rate spike: 10 errors in the last 5 minutes",
+    "severity": "ERROR",
+    "source": "threat_detector",
+    "metadata": {
+      "error_count": 10,
+      "window_minutes": 5
+    },
+    "timestamp": "2026-04-28T19:13:24.253553+00:00",
+    "acknowledged": false
+  },
+  {
+    "id": "1e05926e8a16",
+    "alert_type": "ERROR_RATE_SPIKE",
+    "message": "Error rate spike: 8 errors in the last 5 minutes",
+    "severity": "ERROR",
+    "source": "threat_detector",
+    "metadata": {
+      "error_count": 8,
+      "window_minutes": 5
+    },
+    "timestamp": "2026-04-28T19:13:57.488033+00:00",
+    "acknowledged": false
+  },
+  {
+    "id": "13edf852c2ee",
+    "alert_type": "ERROR_RATE_SPIKE",
+    "message": "Error rate spike: 9 errors in the last 5 minutes",
+    "severity": "ERROR",
+    "source": "threat_detector",
+    "metadata": {
+      "error_count": 9,
+      "window_minutes": 5
+    },
+    "timestamp": "2026-04-28T19:14:12.590892+00:00",
+    "acknowledged": false
+  },
+  {
+    "id": "46dfd0928e79",
+    "alert_type": "AI_RISK_ASSESSMENT",
+    "message": "AI detected CRITICAL risk: Analyzed 50 log entries: 4 errors, 6 warnings, 1 security threats.",
+    "severity": "CRITICAL",
+    "source": "ai_analyzer",
+    "metadata": {
+      "risk_level": "CRITICAL",
+      "anomaly_count": 1,
+      "threat_count": 1
+    },
+    "timestamp": "2026-04-28T19:15:50.950863+00:00",
+    "acknowledged": false
+  },
+  {
+    "id": "4cb8a2099002",
+    "alert_type": "AI_THREAT_BRUTE_FORCE",
+    "message": "Detected brute force pattern in logs",
+    "severity": "CRITICAL",
+    "source": "ai_analyzer",
+    "metadata": {
+      "threat_type": "brute_force",
+      "severity": "CRITICAL",
+      "source_ip": "see logs",
+      "description": "Detected brute force pattern in logs",
+      "recommendation": "Investigate and block offending IPs; review brute_force defenses"
+    },
+    "timestamp": "2026-04-28T19:15:50.959209+00:00",
+    "acknowledged": false
+  },
+  {
+    "id": "6ade3eb79169",
+    "alert_type": "AI_ANOMALY_ERROR_SPIKE",
+    "message": "4/50 log entries are errors",
+    "severity": "ERROR",
+    "source": "ai_analyzer",
+    "metadata": {
+      "type": "error_spike",
+      "severity": "ERROR",
+      "description": "4/50 log entries are errors",
+      "affected_component": "application",
+      "recommendation": "Review error logs and identify root cause"
+    },
+    "timestamp": "2026-04-28T19:15:50.962460+00:00",
+    "acknowledged": false
+  },
+  {
+    "id": "00d8d064d260",
+    "alert_type": "ERROR_RATE_SPIKE",
+    "message": "Error rate spike: 6 errors in the last 5 minutes",
+    "severity": "ERROR",
+    "source": "threat_detector",
+    "metadata": {
+      "error_count": 6,
+      "window_minutes": 5
+    },
+    "timestamp": "2026-04-28T19:16:18.146428+00:00",
+    "acknowledged": false
+  },
+  {
+    "id": "4deccc9b5f06",
+    "alert_type": "ERROR_RATE_SPIKE",
+    "message": "Error rate spike: 7 errors in the last 5 minutes",
+    "severity": "ERROR",
+    "source": "threat_detector",
+    "metadata": {
+      "error_count": 7,
+      "window_minutes": 5
+    },
+    "timestamp": "2026-04-28T19:17:33.608274+00:00",
+    "acknowledged": false
+  },
+  {
+    "id": "6dd3993c8f9f",
+    "alert_type": "PRIVILEGE_ESCALATION",
+    "message": "Privilege escalation attempt: Privilege escalation attempt: user 'eve' tried to access admin endpoint",
+    "severity": "CRITICAL",
+    "source": "threat_detector",
+    "metadata": {
+      "raw_message": "Privilege escalation attempt: user 'eve' tried to access admin endpoint"
+    },
+    "timestamp": "2026-04-28T19:18:18.944424+00:00",
+    "acknowledged": false
+  },
+  {
+    "id": "5c885d9235ef",
+    "alert_type": "PRIVILEGE_ESCALATION",
+    "message": "Privilege escalation attempt: Privilege escalation attempt: user 'alice' tried to access admin endpoint",
+    "severity": "CRITICAL",
+    "source": "threat_detector",
+    "metadata": {
+      "raw_message": "Privilege escalation attempt: user 'alice' tried to access admin endpoint"
+    },
+    "timestamp": "2026-04-28T19:18:34.049408+00:00",
+    "acknowledged": false
+  },
+  {
+    "id": "1e05926e8a16",
+    "alert_type": "ERROR_RATE_SPIKE",
+    "message": "Error rate spike: 8 errors in the last 5 minutes",
+    "severity": "ERROR",
+    "source": "threat_detector",
+    "metadata": {
+      "error_count": 8,
+      "window_minutes": 5
+    },
+    "timestamp": "2026-04-28T19:19:22.324902+00:00",
+    "acknowledged": false
+  },
+  {
+    "id": "1d613915c92e",
+    "alert_type": "PRIVILEGE_ESCALATION",
+    "message": "Privilege escalation attempt: Privilege escalation attempt: user 'deploy' tried to access admin endpoint",
+    "severity": "CRITICAL",
+    "source": "threat_detector",
+    "metadata": {
+      "raw_message": "Privilege escalation attempt: user 'deploy' tried to access admin endpoint"
+    },
+    "timestamp": "2026-04-28T19:19:28.363531+00:00",
+    "acknowledged": false
+  },
+  {
+    "id": "13edf852c2ee",
+    "alert_type": "ERROR_RATE_SPIKE",
+    "message": "Error rate spike: 9 errors in the last 5 minutes",
+    "severity": "ERROR",
+    "source": "threat_detector",
+    "metadata": {
+      "error_count": 9,
+      "window_minutes": 5
+    },
+    "timestamp": "2026-04-28T19:19:28.365901+00:00",
+    "acknowledged": false
+  },
+  {
+    "id": "c34a096b8253",
+    "alert_type": "AI_RISK_ASSESSMENT",
+    "message": "AI detected CRITICAL risk: Analyzed 50 log entries: 8 errors, 8 warnings, 1 security threats.",
+    "severity": "CRITICAL",
+    "source": "ai_analyzer",
+    "metadata": {
+      "risk_level": "CRITICAL",
+      "anomaly_count": 1,
+      "threat_count": 1
+    },
+    "timestamp": "2026-04-28T19:19:59.988567+00:00",
+    "acknowledged": false
+  },
+  {
+    "id": "7a932191b964",
+    "alert_type": "AI_THREAT_PRIVILEGE_ESCALATION",
+    "message": "Detected privilege escalation pattern in logs",
+    "severity": "CRITICAL",
+    "source": "ai_analyzer",
+    "metadata": {
+      "threat_type": "privilege_escalation",
+      "severity": "CRITICAL",
+      "source_ip": "see logs",
+      "description": "Detected privilege escalation pattern in logs",
+      "recommendation": "Investigate and block offending IPs; review privilege_escalation defenses"
+    },
+    "timestamp": "2026-04-28T19:20:00.003781+00:00",
+    "acknowledged": false
+  },
+  {
+    "id": "fcee74832487",
+    "alert_type": "AI_ANOMALY_ERROR_SPIKE",
+    "message": "8/50 log entries are errors",
+    "severity": "ERROR",
+    "source": "ai_analyzer",
+    "metadata": {
+      "type": "error_spike",
+      "severity": "ERROR",
+      "description": "8/50 log entries are errors",
+      "affected_component": "application",
+      "recommendation": "Review error logs and identify root cause"
+    },
+    "timestamp": "2026-04-28T19:20:00.008711+00:00",
+    "acknowledged": false
+  },
+  {
+    "id": "e464507b9ea1",
+    "alert_type": "PRIVILEGE_ESCALATION",
+    "message": "Privilege escalation attempt: Privilege escalation attempt: user 'dave' tried to access admin endpoint",
+    "severity": "CRITICAL",
+    "source": "threat_detector",
+    "metadata": {
+      "raw_message": "Privilege escalation attempt: user 'dave' tried to access admin endpoint"
+    },
+    "timestamp": "2026-04-28T19:22:17.889080+00:00",
+    "acknowledged": false
+  },
+  {
+    "id": "d627ab251a5f",
+    "alert_type": "SQL_INJECTION",
+    "message": "SQL injection attempt detected: XSS attempt detected on /api/v1/profile from IP 192.168.1.19: payload='1; DROP TABLE users--'",
+    "severity": "CRITICAL",
+    "source": "threat_detector",
+    "metadata": {
+      "raw_message": "XSS attempt detected on /api/v1/profile from IP 192.168.1.19: payload='1; DROP TABLE users--'"
+    },
+    "timestamp": "2026-04-28T19:22:54.282346+00:00",
+    "acknowledged": false
+  },
+  {
+    "id": "2684ed900fba",
+    "alert_type": "XSS_ATTEMPT",
+    "message": "XSS attempt detected: XSS attempt detected on /api/v1/profile from IP 192.168.1.19: payload='1; DROP TABLE users--'",
+    "severity": "ERROR",
+    "source": "threat_detector",
+    "metadata": {
+      "raw_message": "XSS attempt detected on /api/v1/profile from IP 192.168.1.19: payload='1; DROP TABLE users--'"
+    },
+    "timestamp": "2026-04-28T19:22:54.326248+00:00",
+    "acknowledged": false
+  },
+  {
+    "id": "6bb801ab6c30",
+    "alert_type": "ERROR_RATE_SPIKE",
+    "message": "Error rate spike: 10 errors in the last 5 minutes",
+    "severity": "ERROR",
+    "source": "threat_detector",
+    "metadata": {
+      "error_count": 10,
+      "window_minutes": 5
+    },
+    "timestamp": "2026-04-28T19:23:03.388550+00:00",
+    "acknowledged": false
+  },
+  {
+    "id": "b081904a24a9",
+    "alert_type": "PORT_SCAN",
+    "message": "Port scan detected: Potential port scan from IP 192.168.1.13: 270 ports probed in 20s",
+    "severity": "CRITICAL",
+    "source": "threat_detector",
+    "metadata": {
+      "raw_message": "Potential port scan from IP 192.168.1.13: 270 ports probed in 20s"
+    },
+    "timestamp": "2026-04-28T19:23:27.586358+00:00",
+    "acknowledged": false
+  },
+  {
+    "id": "a38001f2e2f2",
+    "alert_type": "AI_RISK_ASSESSMENT",
+    "message": "AI detected CRITICAL risk: Analyzed 50 log entries: 8 errors, 15 warnings, 4 security threats.",
+    "severity": "CRITICAL",
+    "source": "ai_analyzer",
+    "metadata": {
+      "risk_level": "CRITICAL",
+      "anomaly_count": 1,
+      "threat_count": 4
+    },
+    "timestamp": "2026-04-28T19:24:11.458634+00:00",
+    "acknowledged": false
+  },
+  {
+    "id": "012583683e2b",
+    "alert_type": "AI_THREAT_SQL_INJECTION",
+    "message": "Detected sql injection pattern in logs",
+    "severity": "CRITICAL",
+    "source": "ai_analyzer",
+    "metadata": {
+      "threat_type": "sql_injection",
+      "severity": "CRITICAL",
+      "source_ip": "see logs",
+      "description": "Detected sql injection pattern in logs",
+      "recommendation": "Investigate and block offending IPs; review sql_injection defenses"
+    },
+    "timestamp": "2026-04-28T19:24:11.467460+00:00",
+    "acknowledged": false
+  },
+  {
+    "id": "b3d9bb8a94a6",
+    "alert_type": "AI_THREAT_XSS",
+    "message": "Detected xss pattern in logs",
+    "severity": "CRITICAL",
+    "source": "ai_analyzer",
+    "metadata": {
+      "threat_type": "xss",
+      "severity": "CRITICAL",
+      "source_ip": "see logs",
+      "description": "Detected xss pattern in logs",
+      "recommendation": "Investigate and block offending IPs; review xss defenses"
+    },
+    "timestamp": "2026-04-28T19:24:11.471496+00:00",
+    "acknowledged": false
+  },
+  {
+    "id": "4c3cc7683ad6",
+    "alert_type": "AI_THREAT_PORT_SCAN",
+    "message": "Detected port scan pattern in logs",
+    "severity": "CRITICAL",
+    "source": "ai_analyzer",
+    "metadata": {
+      "threat_type": "port_scan",
+      "severity": "CRITICAL",
+      "source_ip": "see logs",
+      "description": "Detected port scan pattern in logs",
+      "recommendation": "Investigate and block offending IPs; review port_scan defenses"
+    },
+    "timestamp": "2026-04-28T19:24:11.518023+00:00",
+    "acknowledged": false
+  }
+]
